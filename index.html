@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Informationen zu Postfach Bot Privat, einem lokalen Werkzeug zur persönlichen Sichtung von Newslettern und Werbemails.">
+  <title>Postfach Bot Privat · Privates Postfach, bewusste Entscheidungen</title>
+  <style>
+    :root{--paper:#F2E7CE;--surface:#FFFCF4;--ink:#0E1A1A;--muted:#3A4747;--forest:#1E4A3C;--terra:#A93A1F;--line:rgba(14,26,26,.18);--focus:#E9B63A}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--forest);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}header,main,footer{max-width:920px;margin:auto;padding:24px 32px}header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;border-bottom:1px solid var(--line)}.brand{font:bold 23px Georgia,serif;text-decoration:none}.status{font-size:12px;color:var(--muted)}main{padding-top:48px;padding-bottom:48px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--terra)}h1,h2{font-family:Georgia,serif;color:var(--forest);line-height:1.15}h1{font-size:clamp(32px,5vw,48px);max-width:20ch;margin:12px 0 24px}h2{font-size:25px;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:20px;max-width:64ch;color:var(--muted)}.sheet{margin-top:32px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:32px;box-shadow:0 2px 4px rgba(14,26,26,.06)}ol{padding-left:24px;margin:0}li+li{margin-top:12px}.note{border-left:3px solid var(--terra);padding-left:16px;margin-top:24px;color:var(--muted)}footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px;font-size:14px;padding-bottom:32px}section p:last-child{margin-bottom:0}@media(max-width:480px){header,main,footer{padding-left:20px;padding-right:20px}main{padding-top:32px}.sheet{padding:24px}.brand{font-size:21px}.lead{font-size:18px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="index.html">Postfach Bot Privat</a><span class="status">Privates Werkzeug · in Entwicklung</span></header>
+  <main>
+    <p class="eyebrow">Ein Werkzeug für den persönlichen Gebrauch</p>
+    <h1>Das Postfach sichten. Selbst entscheiden.</h1>
+    <p class="lead">Postfach Bot Privat unterstützt dabei, mögliche Newsletter und Werbemails im eigenen Postfach zu prüfen und Abmeldewünsche bewusst auszuwählen.</p>
+    <section class="sheet" aria-labelledby="ablauf">
+      <h2 id="ablauf">So ist die Nutzung angelegt</h2>
+      <ol>
+        <li>Das eigene Postfach verbinden und Nachrichten ausschließlich lesend erfassen. Gmail wird dafür mit dem Lesezugriff <code>gmail.readonly</code> angebunden.</li>
+        <li>Vorschläge lokal ansehen und jeweils <strong>Abmelden</strong> oder <strong>Nicht abmelden</strong> wählen.</li>
+        <li>Die konkrete Auswahl prüfen und mit <strong>Fertig</strong> freigeben. Erst danach können unterstützte Abmeldeanfragen an den betreffenden Newsletteranbieter übermittelt werden.</li>
+      </ol>
+      <p class="note">Eine Auswahl ist noch keine erfolgte Abmeldung. Nicht jeder Anbieter und nicht jede Nachricht lassen sich automatisch bearbeiten. Vollständige Werbeerkennung und erfolgreiche Abmeldungen werden nicht garantiert.</p>
+    </section>
+    <section class="sheet" aria-labelledby="lokal">
+      <h2 id="lokal">Die Postfachdaten bleiben im privaten Betrieb</h2>
+      <p>Die Anwendung läuft auf dem eigenen Windows-Rechner. Ihre Bedienoberfläche bleibt im privaten Heimnetz; diese Informationsseite ist kein öffentlicher Maildienst und bietet keinen Zugriff auf das Postfach.</p>
+      <p>Nachrichten werden lokal ausgewertet. Postfachdaten werden weder für Werbung verkauft noch an ein externes KI-Modell gesendet. Die Bestandsaufnahme verändert oder löscht keine Nachrichten.</p>
+      <p>Das private Projekt befindet sich im Aufbau. Welche Verbindungen und Abmeldewege tatsächlich verfügbar sind, zeigt die lokale Anwendung. Einzelheiten stehen in den <a href="privacy.html">Datenschutzhinweisen</a>.</p>
+    </section>
+  </main>
+  <footer><a href="privacy.html">Datenschutzhinweise</a><a href="https://github.com/frankie0079" rel="noreferrer">Projektkontakt über GitHub</a></footer>
+</body>
+</html>
