@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Datenschutzhinweise für den privaten, lokalen Betrieb von Postfach Bot Privat.">
+  <title>Datenschutzhinweise · Postfach Bot Privat</title>
+  <style>
+    :root{--paper:#F2E7CE;--surface:#FFFCF4;--ink:#0E1A1A;--muted:#3A4747;--forest:#1E4A3C;--terra:#A93A1F;--line:rgba(14,26,26,.18);--focus:#E9B63A}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--forest);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}header,main,footer{max-width:920px;margin:auto;padding:24px 32px}header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;border-bottom:1px solid var(--line)}.brand{font:bold 23px Georgia,serif;text-decoration:none}.status{font-size:12px;color:var(--muted)}main{padding-top:48px;padding-bottom:48px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--terra)}h1,h2{font-family:Georgia,serif;color:var(--forest);line-height:1.15}h1{font-size:clamp(32px,5vw,44px);overflow-wrap:anywhere;margin:12px 0 24px}h2{font-size:25px;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:20px;color:var(--muted)}.sheet{margin-top:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:32px;box-shadow:0 2px 4px rgba(14,26,26,.06)}footer{border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px;font-size:14px;padding-bottom:32px}section p:last-child{margin-bottom:0}@media(max-width:480px){header,main,footer{padding-left:20px;padding-right:20px}main{padding-top:32px}.sheet{padding:24px}.brand{font-size:21px}.lead{font-size:18px}}
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="index.html">Postfach Bot Privat</a><span class="status">Privates Werkzeug · in Entwicklung</span></header>
+  <main>
+    <p class="eyebrow">Privater Betrieb · Stand 6. November 2026</p>
+    <h1>Datenschutzhinweise</h1>
+    <p class="lead">Diese Hinweise beschreiben den vorgesehenen privaten Betrieb von Postfach Bot Privat auf dem eigenen Windows-Rechner und die Verarbeitung durch die bereits lokal umgesetzten Funktionen.</p>
+    <section class="sheet" aria-labelledby="zweck">
+      <h2 id="zweck">Zweck und gelesene Daten</h2>
+      <p>Die Anwendung liest Nachrichten aus ausdrücklich verbundenen eigenen Postfächern, um mögliche Newsletter und Werbemails zur persönlichen Prüfung zusammenzustellen. Je nach Postfach und Erfassung gehören dazu Absender, Empfänger, Betreff, Zeitangaben, Ordner, Nachrichtenkennungen, Nachrichteninhalt und technische Abmeldeangaben.</p>
+      <p>Gmail verwendet ausschließlich den OAuth-Lesezugriff <code>gmail.readonly</code>; für Outlook ist lesender Mailzugriff vorgesehen. Diese Berechtigungen werden nicht zum Senden, Verschieben, Löschen oder Markieren von Nachrichten verwendet. Postfachzugriffe und die Erneuerung von Zugriffsberechtigungen erfolgen gegenüber dem jeweiligen Kontoanbieter.</p>
+    </section>
+    <section class="sheet" aria-labelledby="speicher">
+      <h2 id="speicher">Lokale Auswertung und Speicherung</h2>
+      <p>Die Auswertung erfolgt lokal, ohne Übermittlung von Postfachdaten an ein externes KI-Modell. Lokale Bestandsaufnahmen und Entscheidungsnachweise enthalten die für die Prüfung und Bearbeitung benötigten Daten. Sie werden außerhalb des Quellcodebestands gespeichert und durch Windows-Zugriffsrechte (ACL) auf das verwendete Windows-Benutzerkonto begrenzt.</p>
+      <p>Gespeicherte Zugangsdaten und OAuth-Token werden zusätzlich mit der Windows-Datenschutzfunktion DPAPI für dieses Benutzerkonto verschlüsselt. Diese zusätzliche Verschlüsselung gilt nicht pauschal für sämtliche Nachrichtenauszüge und Bestandsaufnahmen.</p>
+      <p>Die lokale Bedienoberfläche kann im eigenen Heimnetz verwendet werden. Postfachdaten werden nicht auf dieser Informationsseite veröffentlicht. Es gibt keinen Verkauf von Postfachdaten, keine Nutzung für Werbung und keine Verwendung zum Training externer Modelle.</p>
+    </section>
+    <section class="sheet" aria-labelledby="freigabe">
+      <h2 id="freigabe">Abmeldeanfragen nur nach Auswahl</h2>
+      <p>Die Entscheidung bleibt beim Nutzer: <strong>Abmelden</strong> oder <strong>Nicht abmelden</strong> wählen, die konkrete Liste prüfen und erst mit <strong>Fertig</strong> freigeben. Nur unterstützte und freigegebene Anfragen werden ausgeführt.</p>
+      <p>Bei einer freigegebenen Anfrage werden die erforderlichen Abmeldeangaben an den betreffenden Newsletteranbieter übermittelt, beim Versand einer Abmeldemail auch über den verwendeten Mailanbieter. Dazu können die Absenderadresse und die für die Zuordnung erforderlichen Angaben aus der Newsletter-Abmeldeanweisung gehören. Eine Anfrage garantiert keine erfolgreiche Abmeldung.</p>
+      <p>Gmail- und Outlook-Leseverbindungen erhalten dadurch keine Sendeberechtigung. Solange für ein Konto kein gesonderter unterstützter Abmeldeweg eingerichtet ist, kann die Anwendung dafür keine Abmeldung ausführen.</p>
+    </section>
+    <section class="sheet" aria-labelledby="kontrolle">
+      <h2 id="kontrolle">Zugriff beenden und lokale Daten</h2>
+      <p>Eine erteilte OAuth-Berechtigung kann beim jeweiligen Kontoanbieter widerrufen werden. Damit wird weiterer Zugriff über diese Berechtigung unterbunden. Bereits lokal gespeicherte Bestandsaufnahmen und Entscheidungsnachweise werden durch den Widerruf nicht automatisch gelöscht.</p>
+      <p>Die lokale Aufbewahrung wird vom Betreiber des privaten Windows-Rechners verwaltet. Für Bestandsaufnahmen und Entscheidungsnachweise ist keine automatische Löschfrist eingerichtet; sie bleiben bis zur gezielten lokalen Löschung erhalten.</p>
+    </section>
+    <section class="sheet" aria-labelledby="webseite">
+      <h2 id="webseite">Diese Informationsseiten</h2>
+      <p>Die Seiten selbst enthalten keine Formulare, Skripte, Analysewerkzeuge oder extern geladenen Schriftarten und setzen keine eigenen Tracking-Cookies. Sie stellen keine Anmeldung zur lokalen Anwendung bereit.</p>
+      <p>Bei einer Bereitstellung über GitHub Pages gilt: Beim Aufruf einer dort veröffentlichten Seite protokolliert und speichert GitHub die IP-Adresse zu Sicherheitszwecken. Weitere Informationen enthält die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">Datenschutzerklärung von GitHub</a>. Das Öffnen des Projektkontakts führt ebenfalls zu GitHub.</p>
+      <p>Projektkontakt: <a href="https://github.com/frankie0079" rel="noreferrer">öffentliches GitHub-Profil frankie0079</a>.</p>
+    </section>
+  </main>
+  <footer><a href="index.html">Zur Projektbeschreibung</a><a href="https://github.com/frankie0079" rel="noreferrer">Projektkontakt über GitHub</a></footer>
+</body>
+</html>
